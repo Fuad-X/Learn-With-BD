@@ -6,16 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Just DO IT</title>
 </head>
-<body>
-    <h1>Please Enter your informations</h1>
-    <form action="home.html">
-        <label for="username">Username</label>
-        <input type="text" placeholder="Username" name="username" required>
+<style>
+    .Login_System {
+        margin-left: 25%;
+        color: black;
+        background-color: rgb(27, 168, 250);
+        height: 300px;
+        width: 50%;
+        border-radius: 7%;
+        padding-top: 25%;
+        text-align: center;
+        font-size: large;
+    }
+    
+    .resetpassword {
+        color:rgb(255, 0, 0);
+        font-size: 10px;
+    }
+</style>
 
-        <label for="pass">Password</label>
-        <input type="password" placeholder="Password" name="pass" required>
-        
-        <button type="submit">Login</button>
-    </form>
+<body>
+    <div class="Login_System">
+        <form action="home.html">
+            <label for="username">Username</label>
+            <input type="text" placeholder="Username" name="username" required>
+
+            <label for="pass">Password</label>
+            <input type="password" placeholder="Password" name="pass" required>
+            
+            <button type="submit">Login</button>
+        </form>
+        <h4 class="resetpassword">forgot password?</h4>
+    </div>
 </body>
 </html>
