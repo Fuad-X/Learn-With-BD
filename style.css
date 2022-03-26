@@ -1,69 +1,93 @@
+body{
+    margin: 0px;
+}
 
-    body{
-        margin: 0px;
-    }
+*{
+    box-sizing: border-box;
+}
 
-    .catagories {
-        width: 70%;
-        margin-left: 15%;
-        background-color: blueviolet;
-        border-radius: 10px;
-    }
+.catagories {
+    width: 70%;
+    margin-left: 15%;
+    background-color: blueviolet;
+    border-radius: 10px;
+    overflow: hidden;
+    float: right;
+    text-align: center;
+}
 
-    a{
-        text-decoration: none;
-        display: inline-block;
-        padding: 8px 16px;
-        background-color: gold;
-        color: brown;
-        width: 50%;
-        margin-left: 25%;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        border-radius: 10px;
-        text-align: center;
-    }
+.leftNavigationBar{
+    float: left;
+    width: 30%;
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+    position: fixed;
+    padding: 9% 5%;
+}
 
-    a:hover{
-        background-color: brown;
-        color: white;
-    }
+.leftNavigationBar a{
+    display: block;
+    font-style: none;
+    color: white;
+    font-size: 200%;
+}
 
-    .TopNavigationBar
-    {
-        height: auto;
-        text-align: center;
-        background-color: blue;
-        margin-top: 0px;
-    }
+.catagories a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: gold;
+    color: brown;
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
 
-    .grid{
-        
-    }
+.catagories a:hover{
+    background-color: brown;
+    color: white;
+}
 
-    .container{
-        width: 75%;
-    }
-
-    .images
-    {
-        width : 100%;
-    }
+.TopNavigationBar
+{
+    width: 70%;
+    text-align: center;
+    background-color: blue;
+    float: right;
     
-    .player{
-        width: 100%;
-    }
+}
 
-    .Y{
-        grid-column: 2/3;
-    }
+.grid{
+    
+}
 
-    .Z{
-        grid-column: 3/4;
-    }
+.container{
+    width: 75%;
+    float: right;
+}
 
-    .gallary{
-        display: grid;
-        grid-template-columns: 4fr 4fr 4fr 4fr;
-        grid-gap: 10px; 
-    }
+.images
+{
+    width : 100%;
+}
+
+.player{
+    width: 100%;
+}
+
+.Y{
+    grid-column: 2/3;
+}
+
+.Z{
+    grid-column: 3/4;
+}
+
+.gallary{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    grid-gap: 10px; 
+}
