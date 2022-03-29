@@ -5,17 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>English Alphabets</title>
 </head>
 
 <body>
-    <div class="leftNavigationBar">
+    <div class="leftNavigationBar" id="leftNav">
+        <span style="font-size:30px;cursor:pointer" onclick="closeLeftNavigationBar()"> &times; </span>
         <a href="#">Home</a>
-        <a href="about us.html" target="blank">About Us</a>
+        <a href="about us.html" target="_blank">About Us</a>
     </div>
 
-    <div class="container">
-        <div class="gallary" >
+    <div id="page">
+        <div class="TopNavigationBar" id="topNav">
+            <span style="font-size:30px;cursor:pointer" onclick="openLeftNavigationBar()"> &#9776; </span>
+            <h1>Learn With BD</h1>
+        </div>
+
+        <div class="container">
+            <div class="gallary" >
                 <div class="grid">
                     <img src="Alphabet(english)/A.jpg" alt="A" class="images">
                     <audio class="player" src="Audio_Alphabet(english)/A.mp3" controls></audio>
@@ -120,7 +127,23 @@
                     <img src="Alphabet(english)/Z.jpeg" alt="Z" class="images">
                     <audio class="player" src="Audio_Alphabet(english)/Z.mp3" controls></audio>
                 </div>
+            </div>
         </div>
     </div>
+
+    <script>
+        function openLeftNavigationBar()
+        {
+            document.getElementById("leftNav").style.width ="25%";
+            document.getElementById("page").style.width ="75%";
+            document.getElementById("page").style.marginLeft ="25%";
+        }
+        function closeLeftNavigationBar()
+        {
+            document.getElementById("leftNav").style.width ="0%";
+            document.getElementById("page").style.width ="100%";
+            document.getElementById("page").style.marginLeft ="0";
+        }
+    </script>
 </body>
 </html>
