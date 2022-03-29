@@ -9,26 +9,45 @@
 </head>
 
 <body>
-    <div class="TopNavigationBar">
-        <h1>Learn With BD</h1>
-    </div>
-
-    <div class="leftNavigationBar">
+    <div class="leftNavigationBar" id="leftNav">
+        <span style="font-size:30px;cursor:pointer" onclick="closeLeftNavigationBar()"> &times; </span>
         <a href="#">Home</a>
-        <a href="about us.html" target="blank">About</a>
+        <a href="about us.html" target="_blank">About Us</a>
     </div>
 
-    <div class="catagories">
-        <a href="home.html" target="_blank" class="button">Alphabet Capital</a>
-        <a href="home.html" target="_blank" class="button">Alphabet Capital</a>
-        <a href="home.html" target="_blank" class="button">Alphabet Capital</a>
-        <a href="home.html" target="_blank" class="button">Alphabet Capital</a>
-        <a href="home.html" target="_blank" class="button">Alphabet Capital</a>
-        <a href="home.html" target="_blank" class="button">Alphabet Capital</a>
-        <a href="home.html" target="_blank" class="button">Alphabet Capital</a>
-        <a href="home.html" target="_blank" class="button">Alphabet Capital</a>
-        <a href="home.html" target="_blank" class="button">Alphabet Capital</a>
-        <a href="home.html" target="_blank" class="button">Alphabet Capital</a>
+    <div id="page">
+        <div class="TopNavigationBar" id="topNav">
+            <span style="font-size:30px;cursor:pointer" onclick="openLeftNavigationBar()"> &#9776; </span>
+            <h1>Learn With BD</h1>
+        </div>
+
+        <div class="catagories" id="catag">
+            <a href="home.html" target="_blank" class="button">Alphabet Capital</a>
+            <a href="home.html" target="_blank" class="button">Alphabet Capital</a>
+            <a href="home.html" target="_blank" class="button">Alphabet Capital</a>
+            <a href="home.html" target="_blank" class="button">Alphabet Capital</a>
+            <a href="home.html" target="_blank" class="button">Alphabet Capital</a>
+            <a href="home.html" target="_blank" class="button">Alphabet Capital</a>
+            <a href="home.html" target="_blank" class="button">Alphabet Capital</a>
+            <a href="home.html" target="_blank" class="button">Alphabet Capital</a>
+            <a href="home.html" target="_blank" class="button">Alphabet Capital</a>
+            <a href="home.html" target="_blank" class="button">Alphabet Capital</a>
+        </div>
     </div>
+
+    <script>
+        function openLeftNavigationBar()
+        {
+            document.getElementById("leftNav").style.width ="25%";
+            document.getElementById("page").style.width ="75%";
+            document.getElementById("page").style.marginLeft ="25%";
+        }
+        function closeLeftNavigationBar()
+        {
+            document.getElementById("leftNav").style.width ="0%";
+            document.getElementById("page").style.width ="100%";
+            document.getElementById("page").style.marginLeft ="0";
+        }
+    </script>
 </body>
 </html>
