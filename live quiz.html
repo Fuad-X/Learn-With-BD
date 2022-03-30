@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Quiz</title>
+</head>
+ 
+<style>
+    .quizContainer{
+        background-color: gainsboro;
+        width: 80%;
+        margin-left: 10%;
+        text-align: center;
+        padding-top: 4%;
+        padding-bottom: 4%;
+        border-radius: 10px;
+    }
+ 
+    .optionContainer{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 5%;
+        display: flex;
+    }
+ 
+    .quizOptionImage{
+        width: 80%;
+        border-radius: 10px;
+    }
+ 
+    .option{
+        width: 25%;
+        display: block;
+    }
+ 
+    .submitButton{
+        text-decoration: none;
+        color: white;
+        background-color: black;
+    }
+ 
+    .sub{
+        margin-top: 4%;
+    }
+</style>
+ 
+<body>
+    <div class="quizContainer">
+        <audio controls autoplay></audio>
+ 
+        <div class="optionContainer">
+            <div class="option">
+                <img src="Alphabet(english)/A.jpg"  alt="A" class="quizOptionImage">
+                <input type="radio" name="answer" id="a" class="answer">
+                <label for="a" id="a_text">Question</label>
+            </div>
+            <div class="option">
+                <img src="Alphabet(english)/B.jpeg"  alt="B" class="quizOptionImage">
+                <input type="radio" name="answer" id="a" class="answer">
+                <label for="a" id="a_text">Question</label>
+            </div>
+            <div class="option">
+                <img src="Alphabet(english)/C.jpeg"  alt="C" class="quizOptionImage">
+                <input type="radio" name="answer" id="a" class="answer">
+                <label for="a" id="a_text">Question</label>
+            </div>
+            <div class="option">
+                <img src="Alphabet(english)/D.jpeg"  alt="D" class="quizOptionImage">
+                <input type="radio" name="answer" id="a" class="answer">
+                <label for="a" id="a_text">Question</label>
+            </div>
+        </div>
+ 
+        <div class="sub">
+            <a href="#" class="submitButton">Submit</a>
+        </div>
+    </div>
+</body>
+ 
+</html>
