@@ -8,49 +8,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
  
-<style>
-    .quizContainer{
-        background-color: gainsboro;
-        width: 80%;
-        margin-left: 10%;
-        text-align: center;
-        padding-top: 4%;
-        padding-bottom: 4%;
-        border-radius: 10px;
-    }
- 
-    .optionContainer{
-        width: 80%;
-        margin-left: 10%;
-        margin-top: 5%;
-        display: flex;
-    }
- 
-    .quizOptionImage{
-        width: 80%;
-        border-radius: 10px;
-    }
- 
-    .option{
-        width: 25%;
-        display: block;
-    }
- 
-    .submitButton{
-        text-decoration: none;
-        color: white;
-        background-color: black;
-    }
- 
-    .sub{
-        margin-top: 4%;
-    }
-</style>
- 
 <body>
     <div class="leftNavigationBar" id="leftNav">
         <span style="font-size:30px;cursor:pointer" onclick="closeLeftNavigationBar()"> &times; </span>
-        <a href="#">Home</a>
+        <a href="index.html">Home</a>
+        <a href="live quiz.html" target="_blank">Live Quiz</a>
         <a href="about us.html" target="_blank">About Us</a>
     </div>
 
@@ -59,37 +21,40 @@
             <span style="font-size:30px;cursor:pointer" onclick="openLeftNavigationBar()"> &#9776; </span>
             <h1>Learn With BD</h1>
         </div>
-    <div class="quizContainer">
-        <audio controls autoplay></audio>
- 
-        <div class="optionContainer">
-            <div class="option">
-                <img src="Alphabet(english)/A.jpg"  alt="A" class="quizOptionImage">
-                <input type="radio" name="answer" id="a" class="answer">
-                <label for="a" id="a_text">Question</label>
+        
+        <div class="quizContainer">
+            <audio controls autoplay></audio>
+    
+            <div class="optionContainer">
+                <div class="option">
+                    <img src="Alphabet(english)/A.jpg"  alt="A" class="quizOptionImage">
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">Question</label>
+                </div>
+                <div class="option">
+                    <img src="Alphabet(english)/B.jpeg"  alt="B" class="quizOptionImage">
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">Question</label>
+                </div>
+                <div class="option">
+                    <img src="Alphabet(english)/C.jpeg"  alt="C" class="quizOptionImage">
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">Question</label>
+                </div>
+                <div class="option">
+                    <img src="Alphabet(english)/D.jpeg"  alt="D" class="quizOptionImage">
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">Question</label>
+                </div>
             </div>
-            <div class="option">
-                <img src="Alphabet(english)/B.jpeg"  alt="B" class="quizOptionImage">
-                <input type="radio" name="answer" id="a" class="answer">
-                <label for="a" id="a_text">Question</label>
-            </div>
-            <div class="option">
-                <img src="Alphabet(english)/C.jpeg"  alt="C" class="quizOptionImage">
-                <input type="radio" name="answer" id="a" class="answer">
-                <label for="a" id="a_text">Question</label>
-            </div>
-            <div class="option">
-                <img src="Alphabet(english)/D.jpeg"  alt="D" class="quizOptionImage">
-                <input type="radio" name="answer" id="a" class="answer">
-                <label for="a" id="a_text">Question</label>
+    
+            <div class="sub">
+                <a href="#" class="submitButton">Submit</a>
             </div>
         </div>
- 
-        <div class="sub">
-            <a href="#" class="submitButton">Submit</a>
-        </div>
-    </div>
     </div>
 </body>
+
+<script src="script.js"></script>
  
 </html>
