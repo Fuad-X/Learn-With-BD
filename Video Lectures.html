@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Lectures</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ 
+<style>
+    .videoContainer{
+        background-color: gainsboro;
+        width: 80%;
+        float: right;
+        margin-right: 10%;
+        margin-top: 7%;
+        border-radius: 10px;
+        text-align: center;
+    }
+</style>
+ 
+<body>
+    <div class="leftNavigationBar" id="leftNav">
+        <span style="font-size:30px;cursor:pointer" onclick="closeLeftNavigationBar()"> &times; </span>
+        <a href="index.html">Home</a>
+        <a href="live quiz.html" target="_blank">Live Quiz</a>
+        <a href="about us.html" target="_blank">About Us</a>
+    </div>
+ 
+    <div id="page">
+        <div class="TopNavigationBar" id="topNav">
+            <span style="font-size:30px;cursor:pointer" onclick="openLeftNavigationBar()"> &#9776; </span>
+            <h1>Learn With BD</h1>
+        </div>
+ 
+        <div class="videoContainer">
+            <h3>English Alphabets</h3>
+            <embed style="width: 100%; height: 450px;" src="https://w...content-available-to-author-only...e.com/embed/AIMrS6kC000&t=15s"></embed>
+        </div>
+    </div>
+</body>
+ 
+<script src="script.js"></script>
+</html>
