@@ -113,3 +113,67 @@ body{
     grid-gap: 10px; 
 }
 
+.quizContainer{
+    background-color: gainsboro;
+    width: 80%;
+    margin-right: 10%;
+    margin-top: 5%;
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    border-radius: 10px;
+    float: right;
+}
+
+.optionContainer{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+    display: flex;
+}
+
+.quizOptionImage{
+    width: 80%;
+    border-radius: 10px;
+}
+
+.option{
+    width: 25%;
+    display: block;
+}
+
+.submitButton{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.sub{
+    margin-top: 4%;
+}
+
+.box{
+    margin-right: 15%;
+    width: 70%;
+    background-color: gray;
+    padding: 3%;
+    border-radius: 10px;
+    float: right;
+    margin-top: 10%;
+}
+
+.namePlate{
+    background-color: greenyellow;
+    width: 80%;
+    margin: 1%;
+    margin-left: 10%;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+}
+
+.profilePicture{
+    width: 10%;
+    height: 10%;
+    border-radius: 100%;
+}
