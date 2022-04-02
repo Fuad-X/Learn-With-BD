@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download Contents</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ 
+<style>
+    .downloadContainer{
+        background-color: gainsboro;
+        width: 80%;
+        float: right;
+        margin-right: 10%;
+        margin-top: 2%;
+        border-radius: 10px;
+        text-align: center;
+        padding: 2%;
+    }
+ 
+    .downloadContainer a{
+        background-color: cornflowerblue;
+        color: black;
+        text-decoration: none;
+    }
+</style>
+ 
+<body>
+    <div class="leftNavigationBar" id="leftNav">
+        <span style="font-size:30px;cursor:pointer" onclick="closeLeftNavigationBar()"> &times; </span>
+        <a href="index.html">Home</a>
+        <a href="live quiz.html" target="_blank">Live Quiz</a>
+        <a href="about us.html" target="_blank">About Us</a>
+    </div>
+ 
+    <div id="page">
+        <div class="TopNavigationBar" id="topNav">
+            <span style="font-size:30px;cursor:pointer" onclick="openLeftNavigationBar()"> &#9776; </span>
+            <h1>Learn With BD</h1>
+        </div>
+ 
+        <div class="downloadContainer">
+            <h3>English Alphabet(Capital)</h3>
+            <a href="#" download="A">Download</a>
+        </div>
+ 
+        <div class="downloadContainer">
+            <h3>English Alphabet(Capital)</h3>
+            <a href="#" download="A">Download</a>
+        </div>
+ 
+        <div class="downloadContainer">
+            <h3>English Alphabet(Capital)</h3>
+            <a href="#" download="A">Download</a>
+        </div>
+ 
+    </div>
+</body>
+ 
+<script src="script.js"></script>
+</html>
