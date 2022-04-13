@@ -105,7 +105,7 @@ function loadQuiz() {
 
     const currentQuizData = quizData[currentQuiz]
 
-    questionEl.innerText = currentQuizData.question
+    questionEl.src = currentQuizData.question
     a_text.innerText = currentQuizData.a
     b_text.innerText = currentQuizData.b
     c_text.innerText = currentQuizData.c
