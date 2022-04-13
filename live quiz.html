@@ -10,51 +10,89 @@
  
 <body>
     <div class="leftNavigationBar" id="leftNav">
-        <span style="font-size:30px;cursor:pointer" onclick="closeLeftNavigationBar()"> &times; </span>
-        <a href="index.html">Home</a>
-        <a href="live quiz.html" target="_blank">Live Quiz</a>
-        <a href="about us.html" target="_blank">About Us</a>
-    </div>
-
-    <div id="page">
-        <div class="TopNavigationBar" id="topNav">
-            <span style="font-size:30px;cursor:pointer" onclick="openLeftNavigationBar()"> &#9776; </span>
-            <h1>Learn With BD</h1>
+        <div class="navOptionContainer">
+            <div class="navigationCloseOption">
+                <span style="font-size:30px;cursor:pointer; color:black" onclick="closeLeftNavigationBar()"> &#9776; </span>
+            </div>
+​
+            <div class="navigationOption">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="navigationOption">
+                <a href="download contents.html" target="_blank">Download Contents</a>
+            </div>
+            <div class="navigationOption">
+                <a href="video lecture.html" target="_blank">Video Lecture</a>
+            </div>
+            <div class="navigationOption">
+                <a class="active" href="live quiz.html" target="_blank">Live Quiz</a>
+            </div>
+            <div class="navigationOption">
+                <a href="about us.html" target="_blank">About Us</a>
+            </div>
         </div>
         
-        <div class="quizContainer">
-            <audio controls autoplay></audio>
-    
-            <div class="optionContainer">
-                <div class="option">
-                    <img src="Alphabet(english)/A.jpg"  alt="A" class="quizOptionImage">
-                    <input type="radio" name="answer" id="a" class="answer">
-                    <label for="a" id="a_text">Question</label>
-                </div>
-                <div class="option">
-                    <img src="Alphabet(english)/B.jpeg"  alt="B" class="quizOptionImage">
-                    <input type="radio" name="answer" id="a" class="answer">
-                    <label for="a" id="a_text">Question</label>
-                </div>
-                <div class="option">
-                    <img src="Alphabet(english)/C.jpeg"  alt="C" class="quizOptionImage">
-                    <input type="radio" name="answer" id="a" class="answer">
-                    <label for="a" id="a_text">Question</label>
-                </div>
-                <div class="option">
-                    <img src="Alphabet(english)/D.jpeg"  alt="D" class="quizOptionImage">
-                    <input type="radio" name="answer" id="a" class="answer">
-                    <label for="a" id="a_text">Question</label>
-                </div>
+    </div>
+​
+    <div id="page">
+        <div class="TopNavigationBar" id="topNav">
+            <div class="navIcon">
+                <span id="naviIcon" style="font-size:30px;cursor:pointer; color: black;" onclick="openLeftNavigationBar()"> &#9776; </span>
             </div>
-    
-            <div class="sub">
-                <a href="#" class="submitButton">Submit</a>
+            
+            <div class="webTitle">
+                <h1>Learn With BD</h1>
+            </div>
+        </div>
+​
+​
+        <div id="quiz">
+            <div class="quizContainer">
+                <audio id="question" src="#" controls autoplay></audio>
+        
+                <div class="optionContainer">
+                    <div class="option">
+                        <img src="Alphabet(english)/A.jpg" id="a_img" alt="A" class="quizOptionImage">
+                        <div>
+                            <input type="radio" name="answer" id="a" class="answer">
+                            <label for="a" id="a_text">Question</label>
+                        </div>
+                    </div>
+​
+                    <div class="option">
+                        <img src="Alphabet(english)/B.jpeg" id="b_img" alt="B" class="quizOptionImage">
+                        <div>
+                            <input type="radio" name="answer" id="b" class="answer">
+                            <label for="b" id="b_text">Question</label>
+                        </div>
+                    </div>
+​
+                    <div class="option">
+                        <img src="Alphabet(english)/C.jpeg" id="c_img" alt="C" class="quizOptionImage">
+                        <div>
+                            <input type="radio" name="answer" id="c" class="answer">
+                            <label for="c" id="c_text">Question</label>
+                        </div>
+                    </div>
+​
+​
+                    <div class="option">
+                        <img src="Alphabet(english)/D.jpeg" id="d_img" alt="D" class="quizOptionImage">
+                        <div>
+                            <input type="radio" name="answer" id="d" class="answer">
+                            <label for="d" id="d_text">Question</label>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="sub">
+                    <button id="submit">Submit</button>
+                </div>
             </div>
         </div>
     </div>
 </body>
-
+​
 <script src="script.js"></script>
  
 </html>
