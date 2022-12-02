@@ -145,14 +145,6 @@ body{
     width: 100%;
 }
 
-.Y{
-    grid-column: 2/3;
-}
-
-.Z{
-    grid-column: 3/4;
-}
-
 .gallary{
     margin-top: 3%;
     background-color: white;
@@ -161,7 +153,6 @@ body{
     margin-left: 5%;
     padding: 2%;
     display: grid;
-    grid-template-columns: 4fr 4fr 4fr 4fr;
     grid-gap: 10px; 
 }
 
@@ -181,7 +172,10 @@ body{
     width: 80%;
     margin-left: 10%;
     margin-top: 5%;
-    display: flex;
+    display: grid;
+    text-align: center;
+    grid-gap: 10px; 
+    place-items: center;
 }
 
 .quizOptionImage{
@@ -191,8 +185,17 @@ body{
 
 .option{
     width: 25%;
+    display: flex;
 }
 
+.option_text{
+    margin-top: 40%;
+    height: 20%;
+}
+
+.question{
+    width: 100%;
+}
 
 .submitButton{
     text-decoration: none;
@@ -217,11 +220,12 @@ body{
 .namePlate{
     background-color: #ff284f;
     color: white;
-    display: flex;
+    display: grid;
     padding: 2%;
     margin-top: 2%;
     margin-bottom: 2%;
     border-radius: 10px;
+    place-items: center;
 }
 
 .name{
@@ -229,15 +233,9 @@ body{
     text-align: center;
 }
 
-.dp{
-    width: 50%;
-    text-align: center;
-    border-left: 1px solid rgb(0, 0, 0);
-}
-
 .profilePicture{
+    width: 50%;
     border-radius: 100%;
-    width: 30%;
 }
 
 button {
